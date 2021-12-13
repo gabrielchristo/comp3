@@ -14,7 +14,7 @@ class PilhaInt
 
 public:
 
-	PilhaInt(int capacity = 10) : mCurrentIndex(0), mCapacity(capacity)
+	PilhaInt(int capacity = 10) : mStack(nullptr), mCurrentIndex(0), mCapacity(capacity)
 	{
 		mStack = (int*) malloc(sizeof(int) * mCapacity);
 
@@ -22,11 +22,11 @@ public:
 			mStack[i] = 0;
 	}
 
-	PilhaInt(const PilhaInt& stack)
+	PilhaInt(const PilhaInt& stack) : mStack(nullptr), mCurrentIndex(0), mCapacity(0)
 	{
-		mStack = (int*) malloc(sizeof(int) * stack.mCapacity);
+		redimensiona(stack.mCapacity);
 
-		for(mCurrentIndex = 0; mCurrentIndex < stack.mCapacity; mCurrentIndex++)
+		for(mCurrentIndex = 0; mCurrentIndex < stack.mCurrentIndex; mCurrentIndex++)
 			mStack[mCurrentIndex] = stack.mStack[mCurrentIndex];
 	}
 
