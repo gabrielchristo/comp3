@@ -73,7 +73,8 @@ public:
 			mCurrentIndex = newCapacity;
 		}
 
-		else {
+		else if(newCapacity > capacidade())
+		{
 			mStack = (int*) realloc(mStack, newCapacity * sizeof(int));
 
 			for(int i = capacidade(); i > newCapacity; i--)
@@ -87,8 +88,10 @@ public:
 	{
 		redimensiona(stack.mCapacity);
 
-		for(mCurrentIndex = 0; mCurrentIndex < capacidade(); mCurrentIndex++)
-			mStack[mCurrentIndex] = stack.mStack[mCurrentIndex];
+		for(int i = 0; i < stack.mCurrentIndex; i++)
+			mStack[i] = stack.mStack[i];
+
+		mCurrentIndex = stack.mCurrentIndex;
 
 		return *this;
 	}
