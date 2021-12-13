@@ -37,9 +37,13 @@ public:
 
 	void print(ostream& stream)
 	{
+		stream << "[";
 		for(int i = 0; i < mCurrentIndex; i++)
-			stream << mStack[i];
-		stream << endl;
+		{
+			stream << " " << mStack[i];
+			if(i < mCurrentIndex - 1) stream << ",";
+		}
+		stream << " ]";
 	}
 
 	const PilhaInt& operator=(const PilhaInt& stack)
