@@ -94,3 +94,36 @@
 ### Aula 28
 - smart pointers
 
+### Aula 32
+- postergando uma operação
+
+### Aula 33
+- expressões lambda
+
+### Aula 34
+- parâmetro template para outro template
+
+### Aula 35
+- atribuição de mais de uma variável
+
+### Aula 36
+- introdução à metaprogramação
+
+### Aula 37
+- substitution failure is not an error (SFINAE)
+
+### Aula 38
+- compilação condicional
+
+### Aula 39
+- if constexpr
+
+### Aula 40
+- try catch para funções
+
+### Aula 41
+- exceções
+
+### Aula 42
+- exemplo de disparo e tratamento de exceção
+
