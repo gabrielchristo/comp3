@@ -94,6 +94,15 @@
 ### Aula 28
 - smart pointers
 
+### Aula 29
+- descrição trabalho 6 (print com lista de tuplas)
+
+### Aula 30
+- descrição trabalho 5 (PilhaInt usando vector)
+
+### Aula 31
+- descrição trabalho 7 (função apply)
+
 ### Aula 32
 - postergando uma operação
 
@@ -126,4 +135,28 @@
 
 ### Aula 42
 - exemplo de disparo e tratamento de exceção
+
+### Aula 43
+- descrição trabalho 3 (classe vetor geométrico)
+
+### Aula 44
+- descrição trabalho 4 (tarefa stream)
+
+### Aula 46
+- descrição trabalho 8 (teste do destrutor para print com lista de tuplas)
+
+### Aula 48
+- código gerado para expressão lambda
+
+### Aula 49
+- ponteiro para campos e métodos
+
+### Aula 50
+- static_assert
+
+### Aula 51
+- invoke
+
+### Aula 52
+- type_traits
 
