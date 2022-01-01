@@ -43,11 +43,12 @@ public:
 	}
 
 	// multiplicacao com escalar
-	Vetor& operator*(T value)
+	Vetor operator*(T value)
 	{
+		Vetor result;
 		for(auto i = 0; i < N; i++)
-			mInitList[i] *= value;
-		return *this;
+			result.mInitList.push_back(mInitList[i] * value);
+		return result;
 	}
 
 	// retorno do vetor b para produto vetorial na forma intermediaria
@@ -63,14 +64,14 @@ public:
 		switch(N)
 		{
 			case 2:
+				result.mInitList.push_back(0);
+				result.mInitList.push_back(0);
 				result.mInitList.push_back(mInitList[0]*vector.mList[1] - mInitList[1]*vector.mList[0]);
-				result.mInitList[0] = 0;
-				result.mInitList[1] = 0;
 				break;
 			case 3:
-				result.mInitList[0] = mInitList[1] * vector.mList[2] - mInitList[2] * vector.mList[1];
-				result.mInitList[1] = mInitList[2] * vector.mList[0] - mInitList[0] * vector.mList[2];
-				result.mInitList[2] = mInitList[0] * vector.mList[1] - mInitList[1] * vector.mList[0];
+				result.mInitList.push_back(mInitList[1] * vector.mList[2] - mInitList[2] * vector.mList[1]);
+				result.mInitList.push_back(mInitList[2] * vector.mList[0] - mInitList[0] * vector.mList[2]);
+				result.mInitList.push_back(mInitList[0] * vector.mList[1] - mInitList[1] * vector.mList[0]);
 				break;
 		}
 		return result;
