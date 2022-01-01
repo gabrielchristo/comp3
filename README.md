@@ -10,5 +10,5 @@ Material da disciplina Computação 3 da UFRJ em 2021.2
 ## Compilação
 
 ```
-g++ -Wall -std=c++17 *.cc -o main.out
+g++ -Wall -std=c++17 -g *.cc -o main.out
 ```
