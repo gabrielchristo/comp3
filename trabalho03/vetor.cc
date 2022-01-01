@@ -57,19 +57,23 @@ public:
 	}
 
 	// produto vetorial
-	Vetor& operator*(const MeioDoProdutoVetorial& vector)
+	Vetor operator*(const MeioDoProdutoVetorial& vector)
 	{
+		Vetor<3, T> result;
 		switch(N)
 		{
 			case 2:
+				result.mInitList.push_back(mInitList[0]*vector.mList[1] - mInitList[1]*vector.mList[0]);
+				result.mInitList[0] = 0;
+				result.mInitList[1] = 0;
 				break;
 			case 3:
-				mInitList[0] = mInitList[1] * vector.mList[2] - mInitList[2] * vector.mList[1];
-				mInitList[1] = mInitList[2] * vector.mList[0] - mInitList[0] * vector.mList[2];
-				mInitList[2] = mInitList[0] * vector.mList[1] - mInitList[1] * vector.mList[0];
+				result.mInitList[0] = mInitList[1] * vector.mList[2] - mInitList[2] * vector.mList[1];
+				result.mInitList[1] = mInitList[2] * vector.mList[0] - mInitList[0] * vector.mList[2];
+				result.mInitList[2] = mInitList[0] * vector.mList[1] - mInitList[1] * vector.mList[0];
 				break;
 		}
-		return *this;
+		return result;
 	}
 
 	// divisao com escalar
@@ -120,7 +124,7 @@ ostream& operator<<(ostream& stream, const Vetor<N,T>& vector)
 
 // multiplicacao do tipo T com vetor
 template<int N, typename T>
-T operator*(T value, const Vetor<N,T>& vector)
+auto operator*(T value, Vetor<N,T>& vector)
 {
-	return value * vector;
+	return vector * value;
 }
