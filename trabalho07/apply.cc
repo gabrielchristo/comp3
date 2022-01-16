@@ -16,3 +16,10 @@ auto apply(const C& list, T F)
 
 	return v;
 }
+
+// overload for initializer list
+template<typename C, typename T>
+auto apply(initializer_list<C> list, T F)
+{
+	return apply<decltype(list), T>(list, F);
+}

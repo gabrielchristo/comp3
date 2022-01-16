@@ -36,7 +36,7 @@ ostream& operator << ( ostream& o, const vector<T>& v ) {
 
 int main( int argc, char* argv[]) {     
 
-/* TESTCASE-PLACE-HOLDER */
+	cout << ::apply( { 1, 2, 3, 4, 5 }, roman );
 
   return 0;
 }
