@@ -15,10 +15,8 @@ class PilhaInt
 
 public:
 
-	PilhaInt(int capacity = 10) : mStack(), mCurrentIndex(0), mCapacity(capacity)
+	PilhaInt(int capacity = 10) : mStack(capacity), mCurrentIndex(0), mCapacity(capacity)
 	{
-		mStack.reserve(mCapacity);
-
 		for(int i = 0; i < capacity; i++)
 			mStack[i] = 0;
 	}
