@@ -5,12 +5,16 @@
 using namespace std;
 
 template<typename C, typename T>
-//auto operator|(const C &list, T F)
-auto operator|(vector<C> list, T F)
+auto operator|(C &list, T F)
+{
+	return filter(list, F);
+}
+
+template<typename C, typename T>
+auto filter(C &list, T F)
 {
 	auto first = *begin(list);
 	vector<decltype(first)> ret;
-
 	// boolean case
 	if constexpr (is_same<decltype(F(first)), bool>::value)
 	{
@@ -18,37 +22,70 @@ auto operator|(vector<C> list, T F)
 			if(F(item)) ret.push_back(item);
 		return ret;
 	}
-
 	// void return case
 	else if constexpr (is_same<decltype(F(first)), void>::value)
 	{
-		for(const auto& item : list)
-			F(item);
+		for(const auto& item : list) F(item);
 	}
+}
 
-	// any other case
-	//else
+template<typename C, typename T>
+auto operator|(vector<C> list, T F)
+{
+	//auto first = *begin(list);
+	//vector<decltype(first)> ret;
+	//// boolean case
+	//if constexpr (is_same<decltype(F(first)), bool>::value)
 	//{
-	//	vector<decltype(F(first))> retType;
-    //    for(const auto &item: list)
-    //        retType.push_back(F(item));
-    //    return retType;
+	//	for(const auto& item : list)
+	//		if(F(item)) ret.push_back(item);
+	//	return ret;
 	//}
-	
+	//// void return case
+	//else if constexpr (is_same<decltype(F(first)), void>::value)
+	//{
+	//	for(const auto& item : list) F(item);
+	//}
+
+	return filter(list, F);
 }
 
 //
 
 #include <iostream>
 
-int main()
+void Teste1()
 {
-	// Teste 1
-	//vector<int> v1 = { 2, 9, 8, 8, 7, 4 };
-	//auto result = v1 | []( int x ) { return x % 2 == 0; };
-	//for( auto x : result ) cout << x << " ";
+	vector<int> v1 = { 2, 9, 8, 8, 7, 4 };
+	auto result = v1 | []( int x ) { return x % 2 == 0; };
+	for( auto x : result ) cout << x << " ";
+}
 
-	// Teste 2
+void Teste2()
+{
 	vector<int> v1 = { 2, 9, 8, 8, 7, 4 };
 	v1 | []( int x ) { return x % 2 == 0; } | [] ( int x ) { cout << x << " "; };
+}
+
+void Teste3()
+{
+	int v1[] = { 2, 9, 8, 8, 7, 4 };
+	auto result = v1 | []( int x ) { return x % 2 == 0; };
+	for( auto x : result ) cout << x << " ";
+}
+
+void Teste4()
+{
+	int v1[] = { 2, 9, 8, 8, 7, 4 };
+	v1 | []( int x ) { return x % 2 == 0; } | [] ( int x ) { cout << x << " "; };
+}
+
+int main()
+{
+	Teste1();
+	Teste2();
+	Teste3();
+	Teste4();
+
+	return 0;
 }
