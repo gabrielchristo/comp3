@@ -145,6 +145,9 @@
 ### Aula 46
 - descrição trabalho 8 (teste do destrutor para print com lista de tuplas)
 
+### Aula 47
+- descrição trabalho 9 (tarefa filter)
+
 ### Aula 48
 - código gerado para expressão lambda
 
@@ -160,3 +163,38 @@
 ### Aula 52
 - type_traits
 
+### Aula 53
+- máquina de pilha
+
+### Aula 55
+- double dispatch
+
+### Aula 56
+- declaração de variáveis em comandos
+
+### Aula 57
+- detecção de features
+
+### Aula 58
+- enable_if
+
+### Aula 59
+- variadic template
+
+### Aula 60
+- exemplo variadic template
+
+### Aula 62
+- solução 1 trabalho 8 (print com lista de tuplas + teste do destrutor)
+
+### Aula 63
+- solução 2 trabalho 8 (print com lista de tuplas + teste do destrutor)
+
+### Aula 64
+- std::variant
+
+### Aula 65
+- std::any
+
+### Aula XX
+- solução trabalho 7 (função apply)
