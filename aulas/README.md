@@ -166,6 +166,9 @@
 ### Aula 53
 - máquina de pilha
 
+### Aula 54
+- descrição trabalho 10 (objeto com tipo variável)
+
 ### Aula 55
 - double dispatch
 
@@ -184,6 +187,9 @@
 ### Aula 60
 - exemplo variadic template
 
+### Aula 61
+- descrição trabalho 11 (derivador simbólico)
+
 ### Aula 62
 - solução 1 trabalho 8 (print com lista de tuplas + teste do destrutor)
 
@@ -195,6 +201,33 @@
 
 ### Aula 65
 - std::any
+
+### Aula 67
+- auxílio para tarefa derivador simbólico
+
+### Aula 68
+- std::visit
+
+### Aula 69
+- herdando de uma expressão lambda
+
+### Aula 70
+- descrição trabalho 12 (expressões lambda simplificadas)
+
+### Aula 71
+- descrição trabalho 13 (classe bind e função bind)
+
+### Aula 72
+- exemplo variadic template
+
+### Aula 73
+- templates para tipos (aliases)
+
+### Aula 74
+- templates para variáveis
+
+### Aula 75
+- herança múltipla virtual
 
 ### Aula XX
 - solução trabalho 7 (função apply)
