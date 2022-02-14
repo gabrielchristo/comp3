@@ -202,6 +202,9 @@
 ### Aula 65
 - std::any
 
+### Aula 66
+- descrição trabalho 14 (objeto com tipo variável - arrays)
+
 ### Aula 67
 - auxílio para tarefa derivador simbólico
 
@@ -228,6 +231,9 @@
 
 ### Aula 75
 - herança múltipla virtual
+
+### Aula 78
+- descrição trabalho 15 (derivador simbólico - parte 2)
 
 ### Aula XX
 - solução trabalho 7 (função apply)
