@@ -31,13 +31,19 @@ string ordena( string a, string b, string c, string d, string e, string f, strin
 }
 
 int main()
-{
+{ 
 	using ::bind;
-  
-	/* Aqui entram os comandos nos casos de teste */
 
+	/* Aqui entram os comandos nos casos de teste */
+	
 	// Teste 1
-	auto f1 = bind( mdc, 12 );
+	//auto f1 = bind( mdc, 12 );
+	//for( int i = 2; i <= 12; i++ )
+  	//	cout << f1( i ) <<  " ";
+
+	// Teste 2
+	auto f2 = bind( mdc );
+	auto f1 = bind( f2, 12 );
 	for( int i = 2; i <= 12; i++ )
   		cout << f1( i ) <<  " ";
   

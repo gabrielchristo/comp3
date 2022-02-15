@@ -21,7 +21,7 @@ private:
 };
 
 
-template<typename F, typename ...Args>
+template<typename F, typename ...Args, typename ...NewArgs>
 auto bind(F functor, Args... args)
 {
 	if constexpr (is_invocable<decltype(functor), decltype(args)...>::value)
@@ -29,6 +29,7 @@ auto bind(F functor, Args... args)
 	else
 		return [functor, args...](auto... newArgs)
 		{
-			return invoke(functor, args..., newArgs...);
+			//return invoke(functor, args..., newArgs...);
+			return bind(functor, args..., newArgs...);
 		};
 }
