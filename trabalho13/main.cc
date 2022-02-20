@@ -42,10 +42,16 @@ int main()
   	//	cout << f1( i ) <<  " ";
 
 	// Teste 2
-	auto f2 = bind( mdc );
-	auto f1 = bind( f2, 12 );
-	for( int i = 2; i <= 12; i++ )
-  		cout << f1( i ) <<  " ";
+	//auto f2 = bind( mdc );
+	//auto f1 = bind( f2, 12 );
+	//for( int i = 2; i <= 12; i++ )
+  	//	cout << f1( i ) <<  " ";
+
+	// Teste 3
+	//auto f2 = bind( mdc );
+	//auto f1 = f2( 18 );
+	//for( int i = 2; i <= 18; i++ )
+  	//	cout << f1( i ) <<  " ";
   
   	return 0;
 }
