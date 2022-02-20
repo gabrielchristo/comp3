@@ -212,7 +212,7 @@
 - std::visit
 
 ### Aula 69
-- herdando de uma expressão lambda
+- herdando de uma expressão lambda (parte 1)
 
 ### Aula 70
 - descrição trabalho 12 (expressões lambda simplificadas)
@@ -234,6 +234,27 @@
 
 ### Aula 78
 - descrição trabalho 15 (derivador simbólico - parte 2)
+
+### Aula 79
+- herdando de uma expressão lambda (parte 2)
+
+### Aula 80
+- boost
+
+### Aula 81
+- constantes tipadas (user defined literals)
+
+### Aula 82
+- fold expressions
+
+### Aula 83
+- herança x composição
+
+### Aula 87
+- descrição trabalho 16 (expressões lambda complicadas)
+
+### Aula 88
+- descrição trabalho 17 (bind posicional)
 
 ### Aula XX
 - solução trabalho 7 (função apply)
