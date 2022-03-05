@@ -232,6 +232,12 @@
 ### Aula 75
 - herança múltipla virtual
 
+### Aula 76
+- solução 1 trabalho 10 (objeto com tipo variável)
+
+### Aula 77
+- solução 2 trabalho 10 (objeto com tipo variável)
+
 ### Aula 78
 - descrição trabalho 15 (derivador simbólico - parte 2)
 
@@ -250,11 +256,38 @@
 ### Aula 83
 - herança x composição
 
+### Aula 84
+- descrição trabalho 18 (lazy streams)
+
+### Aula 85
+- std::thread
+
+### Aula 86
+- std::mutex
+
 ### Aula 87
 - descrição trabalho 16 (expressões lambda complicadas)
 
 ### Aula 88
 - descrição trabalho 17 (bind posicional)
+
+### Aula 89
+- solução trabalho 12 (expressões lambda simplificadas)
+
+### Aula 90
+- descrição trabalho 19 (otimizador de expressões)
+
+### Aula 91
+- descrição trabalho 20 (derivador simbólico - parte 3)
+
+### Aula 92
+- solução 1 trabalho 13 (tarefa bind)
+
+### Aula 93
+- solução 2 trabalho 13 (tarefa bind)
+
+### Aula 94
+- solução 3 trabalho 13 (tarefa bind)
 
 ### Aula XX
 - solução trabalho 7 (função apply)
